@@ -1,0 +1,32 @@
+public class perkalian
+{
+	public static void main (String [] args)
+	{
+	int a[] = new int [10];
+	int aa;
+	int b[] = new int [10];
+	int bb;
+	int c[] = new int [1];
+	int cc;
+	aa = 0 ;
+	while (aa < a.length )
+		{
+		a[aa] = (aa + 1);
+		bb = 0 ;
+		while (bb < b.length )
+			{
+			b[bb] = (bb+1);
+			cc = 0 ;
+			while (cc < 1 )
+			{
+			c[cc] = a[aa] * b[bb];
+			System.out.print(b[bb] +" x " +a[aa] +" = "+c[cc] +" ");
+			cc++;		
+			}
+			bb++;
+			}
+		System.out.println(" ");
+		aa++;
+		}
+	}
+}
