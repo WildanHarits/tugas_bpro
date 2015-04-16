@@ -1,0 +1,10 @@
+public class ProgramJavaPertama
+		{
+	public static void main(String[]args)
+		{
+		System.out.println("Halo Dunia");
+		System.out.println("tes");
+		System.out.print("Halo Dunia");
+		System.out.print("tes");
+		}
+}
