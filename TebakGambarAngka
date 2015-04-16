@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class TebakGambarAngka
+{
+	public static void main (String [] args)
+	{
+	Scanner i = new Scanner (System.in);
+	int a;
+	String b;
+	int bil;
+	int random;
+
+	System.out.print("Masukkan ( 1 : Gambar ) atau ( 2 : Angka ) = ");
+	a = i.nextInt();
+	random = (int)(Math.random() + 1.5);
+	if ( random == a )
+		{ System.out.println("anda benar");
+			if ( a == 1 )
+			{ b = "Gambar"; }
+			else
+			{ b = "Angka"; }
+		}
+		else
+		{ System.out.println("anda salah");
+		
+		if ( a == 1 )
+			{ b = "Angka"; }
+		else
+	
+			{ b = "Gambar"; }
+		}
+	System.out.print("Komputer memilih =" +b);}
+}
