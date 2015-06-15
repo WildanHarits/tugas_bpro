@@ -1,0 +1,31 @@
+public class contohMethod {
+  
+  public static void cetakGaris(){
+    for (int i=0;i<35;i++){
+      System.out.print("*");
+    }
+    System.out.println();
+  }
+  public static void cetakGaris1(String pola){
+    for (int i=-3;i<=pola.length();i++){
+      System.out.print("*");
+    }
+    System.out.println();
+    System.out.println("* "+pola+" *");
+    for (int i=-3;i<=pola.length();i++){
+      System.out.print("*");
+    }
+  }
+
+  
+  public static void main(String []args){
+  
+String pola;
+cetakGaris1("tes");
+  cetakGaris();
+  System.out.println("View Data Customer");
+  cetakGaris();
+  System.out.println("id\tNama\tAlamat");
+  cetakGaris();
+  }
+}
