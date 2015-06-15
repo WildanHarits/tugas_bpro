@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class binary
+{
+	public static void cari(int key)
+	{
+	Scanner input = new Scanner (System.in);
+	//int key;
+	int lo;
+	int hi;
+	int mid;
+	int n = 10;
+	int a[] = {1,2,3,4,5,6,7,8,9,0};
+	
+	lo = 1;
+	hi = n;
+	//key = 9;
+	while(lo <= hi)
+		{
+		mid = (lo + hi)/2;
+		if ( key == a[mid])
+			{
+			System.out.print("posisi : " +mid);
+			lo = hi + 1;
+			}
+		else
+			{
+			if (key < a[mid])
+				{
+				hi = mid - 1;
+				}
+			else 
+				{
+				lo = mid + 1;
+				}
+			}
+		}
+	}
+	public static void main (String []args)
+	{
+	cari (5);
+
+	}
+}
