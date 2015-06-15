@@ -1,0 +1,6 @@
+public class Product{
+	String id;
+	String nama;
+	int harga;
+	int stock;
+	}
