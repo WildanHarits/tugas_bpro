@@ -1,0 +1,48 @@
+import java.util.*;
+import java.io.*;
+public class daftar
+	{
+	public static void materi(String isi , int no)
+		{
+		//System.out.print("Bab ");
+		//System.out.print(bab);
+		System.out.print(":");
+		System.out.print(isi);
+		int a;	
+		int b;
+		//System.out.print(isi.length());
+		for(a = 30 ; a > isi.length() ; a--)
+			{
+			System.out.print(".");
+			}
+		System.out.print(no);
+		System.out.println();
+		}
+	public static void main(String []args) throws IOException
+		{
+
+		Scanner i = new Scanner (System.in);
+		BufferedReader ip = new BufferedReader (new InputStreamReader(System.in));
+		int d;
+		int c;
+		int ia[] = new int [20];
+		String ib[] = new String [20];
+		int ic[] = new int [20];
+
+		System.out.print("Jumlah Bab :");
+		c = i.nextInt();
+		for (d = 0 ; d < c ; d++)
+			{
+			System.out.print("Materi : ");
+			ib[d] = ip.readLine();
+			System.out.print("Halaman : ");
+			ic[d] = i.nextInt();
+			}
+
+		for (d = 0 ; d < c ; d++)
+			{
+			System.out.print("Bab " +(d+1));
+			materi(ib[d],ic[d]);
+			}
+		}
+	}
