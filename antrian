@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class antrian
+	{
+	Queue<AntrianPasien> antrian = new LinkedList<AntrianPasien>();
+
+	public static int NO_ANTRIAN = 0;
+	public static void addPasien(AntrianPasien ap)
+		{
+		NO_ANTRIAN++;
+		}
+	public static AntrianPasien panggilAntrian()
+		{
+		}
+	public static void viewAllAntrian()
+		{
+		}
+	public static void cetakMenu()
+		{
+		System.out.println("1. Tambah Pasien");
+		System.out.println("2. Panggil Pasien");
+		System.out.println("3. ");
+		System.out.println("4. Exit");
+		System.out.println("Masukkan pilihan anda : ");
+		}
+	}
