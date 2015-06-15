@@ -1,0 +1,46 @@
+import java.util.*;
+public class kata
+{
+public static void main (String[] args)
+	{
+	Scanner input = new Scanner (System.in);
+	Random random = new Random();
+	String[] kata = {"wildanharits","harits","prasetyo"};
+	int a = 0;
+	int b;
+	int c;
+	int d;
+	int r = 1;
+	int []sihu = new int [20];
+	int i = 6;
+	int k = 0;
+
+	//while( k == 0)
+		//{
+			for (a = 0 ; a < kata.length ; a++)
+				{
+				for (b = 0 ; b < kata[a].length() ;b++)
+					{
+					r = random.nextInt(kata[a].length());
+					}
+				}
+		//System.out.print(r);
+		for (a = 1 ; a < kata.length ; a++)
+			{
+			for (b = 1 ; b < kata[a].length() ; b++)
+				{
+				r = random.nextInt(kata[a].length());
+				sihu[a] = r;
+				while (sihu[a] == sihu[a-b])
+					{
+					sihu[a] = random.nextInt(kata[a].length());
+					a++;
+					}
+				System.out.println(sihu[a]);
+				
+				}
+			}
+		k = 1;
+		//}
+	}
+}
