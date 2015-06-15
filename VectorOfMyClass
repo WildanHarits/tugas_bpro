@@ -1,0 +1,36 @@
+import java.util.*;
+public class VectorOfMyClass{
+  
+  public static Vector<Product> vProduct = new Vector<Product>();
+  public static void add(Product prd){
+    vProduct.addElement(prd);
+  }
+  
+  public static void add(String id, String nama, int harga, int stock){
+    Product p1 = new Product();
+    p1.id = id;
+    p1.nama = nama;
+    p1.harga = harga;
+    p1.stock = stock;
+    add(p1);
+  }
+  
+  public static void viewAll(){
+    for(int i=0;i<vProduct.size();i++){
+      System.out.println(vProduct.elementAt(i).id + "\t" + vProduct.elementAt(i).nama + "\t\t" +
+                         vProduct.elementAt(i).harga + "\t" + vProduct.elementAt(i).stock);
+    }
+  }
+  
+  public static void main(String[]args){
+    Product p1 = new Product();
+    p1.id = "P01";
+    p1.nama = "Buku Tulis";
+    p1.harga = 3500;
+    p1.stock = 20;
+    add(p1);
+    add("P02","Pencil",2500,30);
+    add("P03","Penggaris",4500,40);
+    viewAll();
+  }
+}
