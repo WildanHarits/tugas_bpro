@@ -1,0 +1,59 @@
+import java.util.*;
+import java.util.Random;
+class puzzle
+{
+	public static void main (String[] args)
+	{
+	Scanner i = new Scanner (System.in);
+	Random r = new Random();
+	String[] kata = {"wildan" , "prasetyo"};
+	int a;
+	int b;
+	int c = 0;
+	int d = 0;
+	int is;
+	//System.out.print("Masukkan jumlah soal : ");
+	//is = i.nextInt();
+	
+	int[] z = new int [20]; 
+	
+	
+	char[] h = new char [20];
+
+	for (b = 0 ; b < kata.length ; b++)
+		{
+		for (a = 0 ; a < kata[b].length() ; a++ )
+			{
+			int x = kata[b].length();
+			int y[] = new int [20];
+			
+			
+
+
+			for (c = 0 ; c <= x ; c++)
+				{
+				for (d = 0 ; d <= x ; d++)
+					{
+					y[d] = r.nextInt(x);
+					if ((y[d] > y[c]) || (y[d] < y[c]))
+					{z[c] = y[d];}
+					System.out.println(y[d]);
+					}
+				}
+
+
+			//h[a] = kata[b].charAt(y);
+			//System.out.print(h[a]);
+			System.out.print(z[c]);
+			}
+		System.out.println("");
+		
+		}
+	
+	
+
+
+
+
+	}
+}
