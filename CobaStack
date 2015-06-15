@@ -1,0 +1,19 @@
+import java.util.*;
+public class CobaStack
+	{
+	public static void main(String[]args)
+		{
+    		Stack<String> coba = new Stack<String>();
+		int i;   
+    		coba.push("Satu");
+    		coba.push("Dua");
+    		coba.push("Tiga"); 
+    		i=1;
+    		do
+			{
+      			System.out.println("Stack ke "+ i + " : " +coba.pop());
+      			i++;
+    			}
+		while(coba.empty() == false);
+	}
+}
