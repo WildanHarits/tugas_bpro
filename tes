@@ -1,0 +1,29 @@
+import java.util.*;
+import java.util.Random;
+
+public class tes
+{
+	public static void main (String []args)
+	{
+	Scanner input = new Scanner (System.in);
+	Random r = new Random();
+	int a;
+	int b;
+	int c;
+	int d;
+
+	/**for (a = 0 ; a < 8 ; a++)
+		{
+		
+		}*/
+	a = 1;
+	b = 1;
+	while (a == b)
+		{
+		a = r.nextInt(2);
+		b = r.nextInt(2);
+		}
+	System.out.println(a +"   "+b);
+	
+	}
+}
