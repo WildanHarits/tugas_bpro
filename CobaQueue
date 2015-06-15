@@ -1,0 +1,17 @@
+import java.util.*;
+public class CobaQueue
+	{
+  	public static void main(String[]args)
+		{  
+    		Queue<String> coba = new LinkedList<String>();
+    		coba.add("Satu");
+    		coba.add("Dua");
+    		coba.add("Tiga");
+    		int i=1;
+    		do
+			{
+      			System.out.println("Queue ke "+ i + " : " +coba.poll());
+      			i++;
+    			}while(coba.size() != 0);   
+  		} 
+	}
