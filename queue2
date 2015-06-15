@@ -1,0 +1,38 @@
+import java.util.*;
+import java.io.*;
+public class queue2
+	{
+	public static void main(String[]args)throws IOException{    
+    	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    	Scanner sc = new Scanner(System.in);
+    	Queue<String> q = new LinkedList<String>();    
+    	String nama;   
+    	int i=1;
+    	boolean keluar = false;    
+    	do
+		{
+      		System.out.println("1. Tambah");
+      		System.out.println("2. Panggil");
+      		System.out.println("3. Keluar");
+      		int pilihan = sc.nextInt();
+      		switch(pilihan)
+			{
+        		case 1 :
+          			System.out.print("Nama : ");
+          			nama = sc.next();
+          			q.offer(nama);
+          			break;
+        		case 2 : 
+          			System.out.println("Antrian ke-" + i);
+          			System.out.println("Silahkan Masuk " + q.remove());
+          			System.out.println("Sisa Antrian : " + q.size());    
+          			i++;
+          			break;
+        		case 3 :
+          			keluar = true;
+          			break;
+      			}   
+    		}
+	while(keluar == false);
+  	}  
+}
