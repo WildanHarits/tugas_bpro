@@ -1,0 +1,24 @@
+import java.util.*;
+public class VectorOfVector{
+  public static Vector<Vector> vMhs = new Vector<Vector>();
+  
+  public static Vector<Object> addMhs(String nim,String nama){
+    Vector <Object> vector = new Vector<Object>();
+    vector.addElement(nim);
+    vector.addElement(nama);
+    return vector;
+  }
+  
+  public static void main(String[]args){
+
+    vMhs.addElement(addMhs("14410100078","Wildan Harits"));
+    vMhs.addElement(addMhs("14410100079","Andry Pratama"));
+    vMhs.addElement(addMhs("14410100080","Maritha Imelda"));
+    System.out.println(vMhs.elementAt(0).elementAt(0));
+    System.out.println(vMhs.elementAt(0).elementAt(1));
+    System.out.println(vMhs.elementAt(1).elementAt(0));
+    System.out.println(vMhs.elementAt(1).elementAt(1));
+    System.out.println(vMhs.elementAt(2).elementAt(0));
+    System.out.println(vMhs.elementAt(2).elementAt(1));
+  }
+}
